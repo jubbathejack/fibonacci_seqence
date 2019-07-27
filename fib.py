@@ -24,4 +24,5 @@ while seqNum <= rangeTop:
     seqNum = (seqNum + 1)
 else:
     print("Fibonacci sequence complete.")
+    exit(0)
 
