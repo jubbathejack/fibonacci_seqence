@@ -2,13 +2,13 @@
 
 x = 0
 y = 1
-seqNum = 3
+seqNum = 2
 
 rangeTop = input("Please enter how many iterations you want to run: ")
 rangeTop = int(rangeTop)
 
-print("1: " + str(x))
-print("2: " + str(y))
+print("0: " + str(x))
+print("1: " + str(y))
 
 while seqNum <= rangeTop:
     x = (x + y)
