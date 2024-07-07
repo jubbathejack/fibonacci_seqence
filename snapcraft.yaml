@@ -1,0 +1,20 @@
+name: fibctl
+summary: A fibonacci number generator that can support integers up to 1,000,000 digits.
+description: |
+  fibctl is a command-line script that can generate fibonacci numbers up to 1,000,000 digits.
+  It is written in python and is incredibally basic. This snap is just to test using snapcraft
+  to package applications.
+version: test
+base: core24
+confinement: strict
+
+parts:
+  fibctl:
+    plugin: dump
+    source: .
+    organize: 
+      fib.py: bin/fibctl
+
+apps:
+  fibctl:
+    command: bin/fibctl
